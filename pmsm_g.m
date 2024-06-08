@@ -109,28 +109,7 @@ end
 
 clear ch db %Clear unneeded variables.
 
-%% CAN Explorer
 
-% ch = canChannel("MathWorks", "Virtual 1", 1) % Create a CAN channel connection using the specified device.
-% canch2 = canChannel('MathWorks','Virtual 1',2)
-% 
-% if ch.InitializationAccess  % If the channel has full control of the device, set the bus speed.
-%     configBusSpeed(ch, 500000)
-% end
-% 
-% db = canDatabase("C:\Users\Sadek\Desktop\asdf\pmsm general motor_updated_2\pmsm general motor\can_ecu.dbc") % Open the DBC-file for use.
-% 
-% ch.Database = db % Attach the database directly to the channel. Definitions from this database are applied automatically to decode incoming messages and signals.
-% start(ch) % Start the channel to establish an online connection.
-% pause(10) % Wait for Messages to Accumulate on the Bus ( to be adjusted)
-% 
-% msgs = receive(ch, Inf, "OutputFormat", "timetable") % Receive all available messages from the channel.
-% stop(ch) % Disconnect the channel. 
-% sigs = canSignalTimetable(msgs) % Convert received messages into individual timetables
-% 
-% clear ch db %Clear unneeded variables.
-%% Data Extraction From Simulink
-% Convert column vectors to arrays
 
 Time = simOut.tout; % Time vector
 
