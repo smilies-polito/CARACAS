@@ -23,6 +23,7 @@ To launch the simulation, run the "pmsm_g".m file where a user prompt will be sh
 You can also adjust the simulation parameters inside the "pmsm_g".m file to simulate different scenarios and BEV types.
 ## Reference  
 if you find this work useful in your research, please consider citing our paper.
+
 [CARACAS: vehiCular ArchitectuRe for detAiled
 Can Attacks Simulation](link to paper) 
 
